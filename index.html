@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b16">
+
+  <meta name="description" content="Play CHAOS SWITCH, the ultimate fast-paced brain and reflex challenge. Test your speed, build streaks and beat your high score.">
+
+  <meta name="google-adsense-account" content="ca-pub-2552540546277855">
+
+  <title>CHAOS SWITCH - Don't Blink!</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Google AdSense -->
+  <script async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2552540546277855"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+  <header class="header">
+    <div class="logo">⚡ CHAOS <span>SWITCH</span></div>
+    <div class="header-tag">THE REFLEX CHALLENGE</div>
+  </header>
+
+  <section class="hero">
+    <div class="eyebrow">ONE RULE. ZERO TIME.</div>
+    <h1>DON'T<br><span>BLINK.</span></h1>
+    <p>Your brain has 10 seconds to keep up. Can you survive?</p>
+  </section>
+
+  <section class="stats">
+
+    <div class="stat">
+      <small>SCORE</small>
+      <strong id="score">0</strong>
+    </div>
+
+    <div class="stat">
+      <small>PERSONAL BEST</small>
+      <strong id="best">0</strong>
+    </div>
+
+    <div class="stat">
+      <small>STREAK</small>
+      <strong id="streak">0×</strong>
+    </div>
+
+  </section>
+
+  <main class="game-box" id="arena">
+
+    <div class="game-top">
+      <span id="level">ROUND 01</span>
+      <span id="timer">10.0 SEC</span>
+    </div>
+
+    <div class="progress">
+      <div id="progressBar"></div>
+    </div>
+
+    <div class="instruction">
+      FOLLOW THE RULE — NOT YOUR INSTINCT
+    </div>
+
+    <div class="rule" id="rule">
+      Tap the <span>CYAN</span> tile
+    </div>
+
+    <div class="tiles" id="tiles">
+
+      <button class="tile cyan" data-id="0">
+        <span class="symbol">●</span>
+        <small>CYAN</small>
+      </button>
+
+      <button class="tile pink" data-id="1">
+        <span class="symbol">▲</span>
+        <small>PINK</small>
+      </button>
+
+      <button class="tile yellow" data-id="2">
+        <span class="symbol">■</span>
+        <small>YELLOW</small>
+      </button>
+
+      <button class="tile purple" data-id="3">
+        <span class="symbol">◆</span>
+        <small>PURPLE</small>
+      </button>
+
+    </div>
+
+    <div class="controls">
+      <button class="secondary" id="soundBtn">🔊 SOUND ON</button>
+      <button class="secondary" id="pauseBtn" disabled>Ⅱ PAUSE</button>
+      <button class="primary" id="startBtn">START GAME</button>
+    </div>
+
+    <div class="overlay" id="overlay">
+      <div class="modal">
+        <div class="emoji">🧠⚡</div>
+        <h2 id="overlayTitle">READY TO<br>BREAK YOUR BRAIN?</h2>
+
+        <p id="overlayText">
+          Read the rule and tap the correct tile.
+          The rules change unexpectedly.
+          Every 5 points makes the game faster.
+          One wrong move costs valuable time!
+        </p>
+
+        <button class="primary" id="overlayBtn">
+          LET'S GO
+        </button>
+
+        <div class="bestline" id="bestline">
+          PERSONAL BEST: 0
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <section class="tips">
+
+    <div>
+      <small>HOW TO PLAY</small>
+      <h3>Read the rule.</h3>
+      <p>Match the colour or shape requested on screen.</p>
+    </div>
+
+    <div>
+      <small>THE CHALLENGE</small>
+      <h3>Build your streak.</h3>
+      <p>Every 5 points increases the difficulty.</p>
+    </div>
+
+  </section>
+
+  <!-- Ad placement placeholder.
+       Add an actual AdSense ad unit here only after approval. -->
+  <div class="ad-space">
+    ADVERTISEMENT
+  </div>
+
+  <footer>
+    <p>PLAY FREE · CHALLENGE FRIENDS · BEAT YOUR BEST</p>
+    <a href="privacy.html">Privacy</a>
+    |
+    <a href="terms.html">Terms</a>
+    <p>© 2026 CHAOS SWITCH. All rights reserved.</p>
+  </footer>
+
+</div>
+
+<script src="game.js"></script>
+
+</body>
+</html>
